@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #444444;
+  overflow-x: hidden;
+}
+.btn-delete {
+  background: #ee0a0a;
+  border: none;
+  color: white;
+}
+.btn-delete:hover {
+  background: #423d3d;
+}
+.alrta {
+  opacity: 1;
+}
+.frm {
+  border: 1px solid #e6e6e6;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+  border-radius: 0.5rem;
+}
+.myName {
+  text-decoration: overline;
+  color: #ea0c0c;
+  font-size: large;
+  font-style: italic;
+  text-shadow: 0 0 black;
+  font-family: fantasy;
+  margin-left: 4rem;
+}
+.btn2 {
+  margin-left: 2rem;
+}
+#cart-empty {
+  border-top: 2 px solid gainsboro;
+  border-bottom: 2 px solid gainsboro;
+  text-align: center;
+  height: 21 rem;
+  font-size: xxx-large;
+  font-style: italic;
+  font-variant: small-caps;
+  color: gainsboro;
+}
+.active-itm {
+  list-style: none;
+}
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  color: #7c7575;
+  height: 33rem;
+  align-items: center;
+  font-size: xx-large;
+}
+#cartEmpty {
+  height: 17rem;
+  font-size: xx-large;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #a69a9a;
+}

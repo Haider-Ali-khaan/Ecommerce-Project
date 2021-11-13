@@ -147,7 +147,7 @@ export default function Header(props) {
                         <li className="menu-item">
                           <Link title="Euro (EUR)" to="#">
                             Euro (EUR)
-                          </Link>
+                          </Link> 
                         </li>
                         <li className="menu-item">
                           <Link title="Dollar (USD)" to="#">

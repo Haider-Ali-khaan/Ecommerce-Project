@@ -9,21 +9,16 @@ export default function Header(props) {
   let srch = () => {
     let input = inputVal.toLowerCase();
     if (input === "") {
-      console.log("khali")
+      return ''
     } else {
-      props.items2.map((item) => {
-        let itemName = item.name.toLowerCase();
-        if (itemName.includes(input)) {
-          console.log('includes')
-              console.log("srch prfct")
-              srh = true;
-              props.setsrchproduct([...props.srchproduct,item])
-        }
-        return console.log("srch run but not any match");
-      });
-      if (!srh === true) {
-        props.setsrchproduct([])
+      var lu = props.items2.filter(sshs)
+      function sshs(item) {
+        return item.name.toLowerCase().includes(input)
       }
+      props.setsrchproduct(lu)
+      // if(srh!==true){
+      //   props.fsetsrchproduct([])
+      // }
     }
   };
   return (
@@ -147,7 +142,7 @@ export default function Header(props) {
                         <li className="menu-item">
                           <Link title="Euro (EUR)" to="#">
                             Euro (EUR)
-                          </Link> 
+                          </Link>
                         </li>
                         <li className="menu-item">
                           <Link title="Dollar (USD)" to="#">

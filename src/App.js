@@ -19,7 +19,7 @@ const PageNotFound = lazy(() => import("./Component/PageNotFound"));
 const SrchPage = lazy(() => import("./Component/SrchPage"));
 const Practice = lazy(()=> import("./Component/Practice"));
 function App() {
-  // getting saved data from storage
+  // getting saved data from storage for cart
   let i;
   if (localStorage.getItem("items") === null) {
     i = [];
@@ -255,8 +255,8 @@ function App() {
   };
 
   // serach
+const [srchproduct, setsrchproduct] = useState([])
 
-  const [srchproduct, setsrchproduct] = useState([]);
   // function for reduce qty and price of a item who's added in cart
   let reduce = (item) => {
     if (item.qty > 1) {

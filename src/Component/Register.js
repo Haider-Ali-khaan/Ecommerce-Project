@@ -25,7 +25,7 @@ import axios from "axios";
       let formData = new FormData();
       formData.append("username", username);
       formData.append("password", password);
-      const url = "http://localhost/New folder/react-php/registration.php";
+      const url = "registration.php";
       axios
         .post(url, formData)
         .then((res) => res.data)

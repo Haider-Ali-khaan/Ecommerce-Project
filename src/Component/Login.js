@@ -14,7 +14,7 @@ import { Link,Redirect } from "react-router-dom";
       let formData = new FormData();
       formData.append("name", name);
       formData.append("password", pswd);
-      const url = "http://localhost/New folder/react-php/login.php";
+      const url = "login.php";
       axios
         .post(url, formData)
         .then((res) => res.data)

@@ -11,13 +11,11 @@ export default function SrchPage(props) {
           <div>This Name Was Not Matched With any Prouduct</div>
         </div>
       )
-
+ 
       }
 
-      {props.items2.map((item) => {
-        return (
+      {
           props.srchproduct.map((i) => {
-            if (item.sno === i.sno) {
               return (
                 <div key={i.sno} className="row">
                   <ul className="product-list grid-products equal-container">
@@ -58,12 +56,8 @@ export default function SrchPage(props) {
                 </div>
 
               )
-            }
-            return ""
           })
-
-        )
-      })}
+      }
     </>
   );
 }
